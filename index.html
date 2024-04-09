@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>javascript sandbox</title>
+    </head>
+<body>
+
+
+
+    <script>
+        function add7(a)    {
+           
+           return (a + 7);
+         }
+        
+        
+         let multiply = function(a,b){
+           return  a * b
+        } 
+        
+       
+        function up1(q)   {
+            let trimmed = q.trimStart();
+            console.log(trimmed)
+            return trimmed.slice(0,1).toUpperCase() + trimmed.slice(1)
+        }
+
+        let lastletter = (somestring) => somestring.trimEnd().slice(-1)
+
+        alert(lastletter('     Boogie   '))
+
+        
+    
+    </script>
+
+
+</body>
+
+</html>
