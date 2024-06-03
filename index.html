@@ -8,42 +8,19 @@
     </head>
 <body>
 
-<a href="/rockPaperScissors.html">RPS</a>
 
     <script>
-        function add7(a)    {
-           
-           return (a + 7);
-         }
-        
-        
-         let multiply = function(a,b){
-           return  a * b
-        } 
-        
-       
-        function up1(q)   {
-            let trimmed = q.trimStart();
-            console.log(trimmed)
-            return trimmed.slice(0,1).toUpperCase() + trimmed.slice(1)
+        const myarray = [1,2,3,4,5,6,7,8,9]
+    
+        function sumOfTripledEvens(arr)   {
+            return arr
+                .filter((item) => item % 2 == 0)
+                .map((item) => item * 3 )
+                .reduce(( total, currentItem ) => total + currentItem);
+
         }
 
-        let lastletter = (somestring) => somestring.trimEnd().slice(-1)
-
-
-        const a = 5;
-            const b = 10;
-
-            function add() {
-            return c;
-            }
-
-            function print() {
-            add();
-            }
-
-            print();
-        
+        console.log(sumOfTripledEvens(myarray))
     
     </script>
 
@@ -51,3 +28,9 @@
 </body>
 
 </html>
+
+const transportation = data.reduce(function(obj,item) {
+obj[item]++
+}
+
+)
